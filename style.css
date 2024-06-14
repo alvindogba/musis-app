@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+main{
+    padding: 30px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 8rem;
+    height: 600px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.player_body{
+    width: 100%;
+    text-align: center;
+    height: max-content;
+    padding-bottom: 0.5rem;
+    box-shadow: 1px 4px 4px 4px whitesmoke;
+}
+.player_body i{
+    transition: all 0.1s ease;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+}
+.player_body i:hover{
+  
+    border: 2px solid greenyellow;
+}
+#player{
+    /* display: none; */
+}
+#player-image{
+    height: 300px;
+    width: 100%;
+
+}
+.icons_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 3rem;
+    height: 70px;
+}
+
+form{
+    text-align: center;
+}
+
+/* Songs List */
+.songs_container{
+    display: flex;
+    gap: 3rem;
+    max-height: 100px;
+    max-width: 500px;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    line-height: 0.3;
+    padding: 10px;
+    transition: all 0.4s ease;
+    color: black;
+    text-decoration: none;
+}   
+
+.songs_container img{
+    width: 20%;
+}
+.songs_container:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    border-right: 2px solid greenyellow;
+}
